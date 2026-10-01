@@ -57,8 +57,8 @@ public class SkeletonPanel extends JPanel {
 
 	private void drawSkeleton(Graphics g, double parentX, double parentY, Node node) {
 		// TODO: Ponga comentarios en este método
-		g.fillOval((int) node.getX() - 4, (int) node.getY() - 4, 8, 8);
-		g.drawLine((int) parentX, (int) parentY, (int) node.getX(), (int) node.getY());
+		g.fillOval((int) node.getX() - 4, (int) node.getY() - 4, 8, 8); // dibuja nodo
+		g.drawLine((int) parentX, (int) parentY, (int) node.getX(), (int) node.getY()); // dibuja segmento
 		if (node.getChildren().size() == 0) {
 			return;
 		}
